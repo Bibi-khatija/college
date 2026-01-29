@@ -1,0 +1,1469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"
+    <title>ANJUMAN POLYTECHNIC HUBLI - Best Polytechnic College in Karnataka | Diploma Programs</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Header & Navigation */
+        header {
+            background: linear-gradient(135deg, #1a3a52 0%, #2c5aa0 100%);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .navbar {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(26, 58, 82, 0.8), rgba(44, 90, 160, 0.8)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%231a3a52" width="1200" height="600"/></svg>');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 8rem 2rem;
+            text-align: center;
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            animation: slideDown 0.8s ease;
+        }
+
+        .hero-content p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            animation: slideUp 0.8s ease;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: #ffd700;
+            color: #1a3a52;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: transform 0.3s, background 0.3s;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            background: #ffed4e;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Sections */
+        section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #1a3a52;
+            border-bottom: 3px solid #ffd700;
+            padding-bottom: 1rem;
+            display: inline-block;
+            width: 100%;
+        }
+
+        /* About Section */
+        .about {
+            background: #f9f9f9;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .about-text h3 {
+            color: #2c5aa0;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .about-text p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        .about-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .stat-box {
+            background: #2c5aa0;
+            color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .stat-box h4 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Departments Section */
+        .departments {
+            background: white;
+        }
+
+        .dept-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .dept-card {
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .dept-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            border-color: #ffd700;
+        }
+
+        .dept-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .dept-card h3 {
+            color: #2c5aa0;
+            margin-bottom: 1rem;
+        }
+
+        .dept-card p {
+            font-size: 0.95rem;
+            color: #666;
+        }
+
+        /* Facilities Section */
+        .facilities {
+            background: #f9f9f9;
+        }
+
+        .facilities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .facility-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .facility-item h3 {
+            color: #2c5aa0;
+            margin-bottom: 1rem;
+        }
+
+        /* Faculty Section */
+        .faculty {
+            background: white;
+        }
+
+        .faculty-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .faculty-card {
+            background: #f9f9f9;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .faculty-avatar {
+            background: linear-gradient(135deg, #2c5aa0, #1a3a52);
+            color: white;
+            font-size: 3rem;
+            padding: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .faculty-info {
+            padding: 1.5rem;
+        }
+
+        .faculty-info h3 {
+            color: #1a3a52;
+            margin-bottom: 0.5rem;
+        }
+
+        .faculty-info p {
+            color: #2c5aa0;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Admission Section */
+        .admission {
+            background: #f9f9f9;
+        }
+
+        .admission-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .admission-info h3 {
+            color: #2c5aa0;
+            margin-bottom: 1rem;
+        }
+
+        .admission-info p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        .admission-form {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .admission-form h3 {
+            color: #2c5aa0;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #333;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #2c5aa0;
+            box-shadow: 0 0 5px rgba(44, 90, 160, 0.2);
+        }
+
+        /* Contact Section */
+        .contact {
+            background: white;
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .contact-item {
+            background: #f9f9f9;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .contact-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #2c5aa0;
+        }
+
+        .contact-item h3 {
+            color: #1a3a52;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-item p {
+            color: #666;
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, #1a3a52 0%, #2c5aa0 100%);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-links {
+            margin: 1.5rem 0;
+        }
+
+        .footer-links a {
+            color: #ffd700;
+            text-decoration: none;
+            margin: 0 1rem;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .social-links {
+            margin: 1.5rem 0;
+        }
+
+        .social-links a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            line-height: 40px;
+            margin: 0 0.5rem;
+            transition: background 0.3s;
+        }
+
+        .social-links a:hover {
+            background: #ffd700;
+            color: #1a3a52;
+        }
+
+        /* Achievements Section */
+        .achievements {
+            background: white;
+        }
+
+        .achievements-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .achievement-item {
+            background: linear-gradient(135deg, #2c5aa0, #1a3a52);
+            color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .achievement-item h3 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #ffd700;
+        }
+
+        .achievement-item p {
+            font-size: 1.1rem;
+        }
+
+        /* Alumni Section */
+        .alumni {
+            background: #f9f9f9;
+        }
+
+        .alumni-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .alumni-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .alumni-item h4 {
+            color: #273ec0;
+            margin-bottom: 0.5rem;
+        }
+
+        .alumni-item p {
+            color: #4b1eb4;
+            font-size: 0.9rem;
+        }
+
+        /* Events Section */
+        .events {
+            background: white;
+        }
+
+        .events-list {
+            margin-top: 2rem;
+        }
+
+        .event-item {
+            background: #f9f9f9;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #296075;
+            border-radius: 4px;
+        }
+
+        .event-date {
+            color: #ebcd23;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .event-item h4 {
+            color: #d34949;
+            margin: 0.5rem 0;
+        }
+
+        /* News Section */
+        .news {
+            background: #f9f9f9;
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .news-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+        }
+
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .news-header {
+            background: linear-gradient(135deg, #39b5db, #3d81b4);
+            color: white;
+            padding: 1rem;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .news-content {
+            padding: 1.5rem;
+        }
+
+        .news-date {
+            color: #4662db;
+            font-size: 0.85rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .news-content h4 {
+            color: #9ab2c4;
+            margin-bottom: 0.5rem;
+        }
+
+        .news-content p {
+            color: #dd92d9;
+            font-size: 0.9rem;
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            background: white;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .testimonial-card {
+            background: #f9f9f9;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(204, 102, 102, 0.1);
+            border-top: 4px solid #df76d1;
+        }
+
+        .testimonial-text {
+            color: #333;
+            font-style: italic;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .testimonial-author {
+            color: #7266d6;
+            font-weight: bold;
+        }
+
+        .testimonial-role {
+            color: #4e63dd;
+            font-size: 0.9rem;
+        }
+
+        .star-rating {
+            color: #8589ca;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Accreditations Section */
+        .accreditations {
+            background: #f9f9f9;
+        }
+
+        .accreditations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .accreditation-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .accreditation-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .accreditation-item p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        /* Placement Records Section */
+        .placements {
+            background: white;
+        }
+
+        .placement-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .placement-stat {
+            background: linear-gradient(135deg, #2c5aa0, #1a3a52);
+            color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .placement-stat h3 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: #ffd700;
+        }
+
+        .companies-section {
+            margin-top: 3rem;
+            background: #f9f9f9;
+            padding: 2rem;
+            border-radius: 8px;
+        }
+
+        .companies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .company-logo {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            font-weight: bold;
+            color: #2c5aa0;
+            min-height: 100px;
+        }
+
+        /* Gallery Section */
+        .gallery {
+            background: #f9f9f9;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .gallery-item {
+            background: linear-gradient(135deg, #2c5aa0, #1a3a52);
+            aspect-ratio: 1;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .hero-content p {
+                font-size: 1.2rem;
+            }
+
+            .about-content,
+            .admission-content {
+                grid-template-columns: 1fr;
+            }
+
+            section h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">🎓 ANJUMAN POLYTECHNIC HUBLI</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#departments">Departments</a></li>
+                <li><a href="#facilities">Facilities</a></li>
+                <li><a href="#faculty">Faculty</a></li>
+                <li><a href="#admission">Admission</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#placements">Placements</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>ANJUMAN POLYTECHNIC HUBLI</h1>
+            <p>Excellence in Technical Education</p>
+            <button class="btn" onclick="document.getElementById('admission').scrollIntoView({behavior: 'smooth'})">Apply Now</button>
+        </div>
+    </section>
+    About Section
+    <section id="about" class="about">
+        <h2>About Anjuman Polytechnic</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>ANJUMAN POLYTECHNIC HUBLI</h3>
+                <p><strong>Vision:</strong> To be a premier technical institution that prepares students for successful careers and contributes to technological advancement and societal development.</p>
+                
+                <p><strong>Mission:</strong> To provide comprehensive technical education through innovative curriculum, experienced faculty, and modern infrastructure, fostering innovation, creativity, and practical skills among our students. Our commitment is to equip graduates with the knowledge and expertise required in today's competitive job market.</p>
+                
+                <p>ANJUMAN POLYTECHNIC is a leading educational institute accredited by NAAC with government recognition, offering quality polytechnic education since 1998. We specialize in providing hands-on training in various technical fields including Computer Science, Mechanical Engineering, Electrical & Electronics, Civil Engineering, Electronics & Communication, and Automobile Engineering.</p>
+                
+                <p>With over 28 years of excellence, we have established a strong reputation for producing skilled professionals who are highly sought after by leading industries. Our student-centric approach focuses on practical application of theoretical knowledge through well-equipped laboratories, industry collaborations, and internship opportunities.</p>
+                
+                <p>We believe in holistic development of our students. Beyond technical education, we encourage participation in extracurricular activities, sports, cultural events, and social initiatives. Our supportive faculty and modern infrastructure create an ideal learning environment for students to excel.</p>
+                
+                <div class="about-stats">
+                    <div class="stat-box">
+                        <h4>28+</h4>
+                        <p>Years of Excellence</p>
+                    </div>
+                    <div class="stat-box">
+                        <h4>5000+</h4>
+                        <p>Alumni Network</p>
+                    </div>
+                    <div class="stat-box">
+                        <h4>100%</h4>
+                        <p>Placement Rate</p>
+                    </div>
+                    <div class="stat-box">
+                        <h4>50+</h4>
+                        <p>Faculty Members</p>
+                    </div>
+                </div>
+            </div>
+            <div style="background: #2c5aa0; color: white; padding: 2rem; border-radius: 8px; height: fit-content;">
+                <h3>Why Choose ANJUMAN POLYTECHNIC?</h3>
+                <ul style="list-style: none; padding: 1rem 0;">
+                    <li style="margin: 0.8rem 0;">✓ NAAC Accredited Institution</li>
+                    <li style="margin: 0.8rem 0;">✓ Government Approved & Recognized by Ministry of Education</li>
+                    <li style="margin: 0.8rem 0;">✓ ISO 9001:2015 Quality Management Certified</li>
+                    <li style="margin: 0.8rem 0;">✓ 28+ Years of Excellence in Technical Education</li>
+                    <li style="margin: 0.8rem 0;">✓ Industry-aligned & regularly updated curriculum</li>
+                    <li style="margin: 0.8rem 0;">✓ Highly qualified faculty with Ph.D. & M.Tech credentials</li>
+                    <li style="margin: 0.8rem 0;">✓ State-of-the-art laboratories with latest equipment</li>
+                    <li style="margin: 0.8rem 0;">✓ Modern computer labs with high-speed internet</li>
+                    <li style="margin: 0.8rem 0;">✓ 100% placement record with highest package ₹6L+</li>
+                    <li style="margin: 0.8rem 0;">✓ 200+ recruiting companies from IT, Automobile & Manufacturing</li>
+                    <li style="margin: 0.8rem 0;">✓ Comprehensive internship & industry collaboration programs</li>
+                    <li style="margin: 0.8rem 0;">✓ Mentorship by experienced industry professionals</li>
+                    <li style="margin: 0.8rem 0;">✓ 6 diverse academic departments & specialized programs</li>
+                    <li style="margin: 0.8rem 0;">✓ Hands-on practical training in every subject</li>
+                    <li style="margin: 0.8rem 0;">✓ Project-based learning & real-world problem solving</li>
+                    <li style="margin: 0.8rem 0;">✓ Skill development workshops & certification programs</li>
+                    <li style="margin: 0.8rem 0;">✓ Research projects & innovation initiatives</li>
+                    <li style="margin: 0.8rem 0;">✓ Personality development & soft skills training</li>
+                    <li style="margin: 0.8rem 0;">✓ Competitive exam preparation (GATE, ESE, etc.)</li>
+                    <li style="margin: 0.8rem 0;">✓ Digital library with online resources & journals</li>
+                    <li style="margin: 0.8rem 0;">✓ Smart classrooms with modern teaching aids</li>
+                    <li style="margin: 0.8rem 0;">✓ Spacious & well-maintained campus infrastructure</li>
+                    <li style="margin: 0.8rem 0;">✓ Sports complex with multiple indoor & outdoor facilities</li>
+                    <li style="margin: 0.8rem 0;">✓ Comfortable hostel accommodation for outstation students</li>
+                    <li style="margin: 0.8rem 0;">✓ On-campus medical & health center</li>
+                    <li style="margin: 0.8rem 0;">✓ Hygienic & affordable cafeteria with nutritious food</li>
+                    <li style="margin: 0.8rem 0;">✓ Active sports & cultural programs throughout the year</li>
+                    <li style="margin: 0.8rem 0;">✓ Technical clubs & innovation centers</li>
+                    <li style="margin: 0.8rem 0;">✓ Student welfare schemes & counseling services</li>
+                    <li style="margin: 0.8rem 0;">✓ Alumni network of 5000+ successful professionals</li>
+                    <li style="margin: 0.8rem 0;">✓ Career guidance & placement cell support</li>
+                    <li style="margin: 0.8rem 0;">✓ Affordable & transparent fee structure</li>
+                    <li style="margin: 0.8rem 0;">✓ Scholarship programs for meritorious & economically backward students</li>
+                    <li style="margin: 0.8rem 0;">✓ Financial aid & installment payment options</li>
+                    <li style="margin: 0.8rem 0;">✓ Merit-based awards & recognition for achievers</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Departments Section -->
+    <section id="departments" class="departments">
+        <h2>Our Academic Departments</h2>
+        <div class="dept-grid">
+            <div class="dept-card">
+                <div class="dept-icon">💻</div>
+                <h3>Computer Science</h3>
+                <p>Learn cutting-edge programming, web development, and software engineering concepts. Prepare for careers in IT industry with hands-on training.</p>
+            </div>
+            <div class="dept-card">
+                <div class="dept-icon">⚙️</div>
+                <h3>Mechanical Engineering (ME)</h3>
+                <p>Master mechanical design, manufacturing, and automation. Gain practical experience in industry-standard tools and techniques.</p>
+            </div>
+            <div class="dept-card">
+                <div class="dept-icon">🔌</div>
+                <h3>Electrical & Electronics Diploma (E&D)</h3>
+                <p>Study power systems, electronics, and renewable energy. Develop expertise in electrical design and practical installations.</p>
+            </div>
+            <div class="dept-card">
+                <div class="dept-icon">🏗️</div>
+                <h3>Civil Engineering</h3>
+                <p>Learn construction management, structural design, and infrastructure development. Build careers in construction and infrastructure sectors.</p>
+            </div>
+            <div class="dept-card">
+                <div class="dept-icon">🔬</div>
+                <h3>Electronics & Communication (E&C)</h3>
+                <p>Explore telecommunications, embedded systems, and signal processing. Prepare for roles in telecom and electronics industries.</p>
+            </div>
+            <div class="dept-card">
+                <div class="dept-icon">🚗</div>
+                <h3>Automobile Engineering</h3>
+                <p>Study vehicle design, engine systems, and automotive technology. Gain expertise in automotive manufacturing and maintenance.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section id="facilities" class="facilities">
+        <h2>Campus Facilities & Infrastructure</h2>
+        <div class="facilities-grid">
+            <div class="facility-item">
+                <div style="font-size: 2.5rem; margin-bottom: 1rem;">🔬</div>
+                <h3>Modern Laboratories</h3>
+                <p>Well-equipped laboratories with latest technology and machinery for hands-on learning and experimentation.</p>
+            </div>
+            <div class="facility-item">
+                <div style="font-size: 2.5rem; margin-bottom: 1rem;">📚</div>
+                <h3>Digital Library</h3>
+                <p>Extensive collection of books, journals, and online resources available for student research and reference.</p>
+            </div>
+            <div class="facility-item">
+                <div style="font-size: 2.5rem; margin-bottom: 1rem;">🏃</div>
+                <h3>Sports Complex</h3>
+                <p>Complete sports facilities including basketball court, badminton courts, and cricket ground for physical fitness.</p>
+            </div>
+            <div class="facility-item">
+                <div style="font-size: 2.5rem; margin-bottom: 1rem;">🏫</div>
+                <h3>Classrooms</h3>
+                <p>Spacious and well-lit classrooms with modern teaching aids and comfortable seating for effective learning.</p>
+            </div>
+            <div class="facility-item">
+                <div style="font-size: 2.5rem; margin-bottom: 1rem;">🍽️</div>
+                <h3>Cafeteria</h3>
+                <p>Hygienic cafeteria serving nutritious food and beverages at affordable prices throughout the day.</p>
+            </div>
+            <div class="facility-item">
+                <div style="font-size: 2.5rem; margin-bottom: 1rem;">💻</div>
+                <h3>Computer Center</h3>
+                <p>Advanced computer labs with high-speed internet connectivity and latest software for technical training.</p>
+            </div>
+            <div class="facility-item">
+                <div style="font-size: 2.5rem; margin-bottom: 1rem;">🏥</div>
+                <h3>Medical & Health Center</h3>
+                <p>On-campus health facility with qualified medical staff for emergency care and student wellness programs.</p>
+            </div>
+            <div class="facility-item">
+                <div style="font-size: 2.5rem; margin-bottom: 1rem;">🛏️</div>
+                <h3>Hostel Accommodation</h3>
+                <p>Comfortable and secure hostel facilities with modern amenities for outstation and local students.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Faculty Section -->
+    <section id="faculty" class="faculty">
+        <h2>Highly Qualified Faculty Members</h2>
+        <div class="faculty-grid">
+            <div class="faculty-card">
+                <div class="faculty-avatar">👨‍🏫</div>
+                <div class="faculty-info">
+                    <h3>Dr. Ramesh Kumar</h3>
+                    <p>HOD - Computer Science</p>
+                    <p>Ph.D. in Computer Science, 15+ years experience</p>
+                </div>
+            </div>
+            <div class="faculty-card">
+                <div class="faculty-avatar">👨‍🏫</div>
+                <div class="faculty-info">
+                    <h3>Prof. Rajesh Sharma</h3>
+                    <p>HOD - Mechanical Engineering</p>
+                    <p>M.Tech in Mechanical Engineering, 18+ years experience</p>
+                </div>
+            </div>
+            <div class="faculty-card">
+                <div class="faculty-avatar">👩‍🏫</div>
+                <div class="faculty-info">
+                    <h3>Dr. Priya Saxena</h3>
+                    <p>HOD - Electrical Engineering</p>
+                    <p>Ph.D. in Power Systems, 12+ years experience</p>
+                </div>
+            </div>
+            <div class="faculty-card">
+                <div class="faculty-avatar">👨‍🏫</div>
+                <div class="faculty-info">
+                    <h3>Prof. Arun Verma</h3>
+                    <p>HOD - Civil Engineering</p>
+                    <p>M.Tech in Structural Engineering, 16+ years experience</p>
+                </div>
+            </div>
+            <div class="faculty-card">
+                <div class="faculty-avatar">👩‍🏫</div>
+                <div class="faculty-info">
+                    <h3>Dr. Neha Patel</h3>
+                    <p>Placement & Training Officer</p>
+                    <p>MBA in Human Resources, 10+ years experience</p>
+                </div>
+            </div>
+            <div class="faculty-card">
+                <div class="faculty-avatar">👨‍🏫</div>
+                <div class="faculty-info">
+                    <h3>Prof. Vikram Singh</h3>
+                    <p>Senior Faculty - Electronics</p>
+                    <p>M.Tech in Electronics & Communication, 14+ years experience</p>
+                </div>
+            </div>
+            <div class="faculty-card">
+                <div class="faculty-avatar">👨‍🏫</div>
+                <div class="faculty-info">
+                    <h3>Prof. Suresh Kulkarni</h3>
+                    <p>HOD - Automobile Engineering</p>
+                    <p>M.Tech in Automotive Engineering, 13+ years experience</p>
+                </div>
+            </div>
+            <div class="faculty-card">
+                <div class="faculty-avatar">👩‍🏫</div>
+                <div class="faculty-info">
+                    <h3>Dr. Anjali Mishra</h3>
+                    <p>Senior Faculty - Civil Engineering</p>
+                    <p>Ph.D. in Environmental Engineering, 11+ years experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admission Section -->
+    <section id="admission" class="admission">
+        <h2>Admission Information & Process</h2>
+        <div class="admission-content">
+            <div class="admission-info">
+                <h3>Eligibility Criteria</h3>
+                <p><strong>Diploma Programs (3-year):</strong></p>
+                <p>✓ 10th Pass (or equivalent) with Science and Mathematics</p>
+                <p>✓ Age: 14 years or above</p>
+                <p>✓ Merit-based selection and entrance test</p>
+                
+                <p style="margin-top: 1.5rem;"><strong>Advanced Diploma Programs (2-year):</strong></p>
+                <p>✓ 12th Pass or Diploma holder</p>
+                <p>✓ Relevant background preferred</p>
+                
+                <h3 style="margin-top: 2rem;">Current Admission Status</h3>
+                <p><strong>Academic Year:</strong> 2025-26</p>
+                <p><strong>Status:</strong> ✓ Admissions are now OPEN!</p>
+                <p><strong>For more details:</strong> Contact +91 88678 65975</p>
+                <p><strong>Contact Time:</strong> Monday - Saturday, 9:00 AM - 5:00 PM</p>
+                
+                <h3 style="margin-top: 2rem;">Fee Structure</h3>
+                <p><strong>Tuition Fee:</strong> ₹25,000 per semester</p>
+                <p><strong>Laboratory Fee:</strong> ₹5,000 per year</p>
+                <p><strong>Development Fee:</strong> ₹2,000 per year</p>
+                <p><strong>Scholarship:</strong> Available for meritorious and economically backward students</p>
+            </div>
+
+            <div class="admission-form">
+                <h3>Quick Inquiry Form</h3>
+                <form onsubmit="handleFormSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="class">Current Class/Qualification</label>
+                        <select id="class" name="class" required>
+                            <option value="">Select Class</option>
+                            <option value="10th">10th Pass</option>
+                            <option value="12th">12th Pass</option>
+                            <option value="diploma">Diploma</option>
+                            <option value="graduation">Graduation</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="program">Program of Interest</label>
+                        <select id="program" name="program" required>
+                            <option value="">Select Program</option>
+                            <option value="cs">Computer Science</option>
+                            <option value="me">Mechanical Engineering (ME)</option>
+                            <option value="ed">Electrical & Electronics Diploma (E&D)</option>
+                            <option value="ce">Civil Engineering</option>
+                            <option value="ec">Electronics & Communication (E&C)</option>
+                            <option value="ae">Automobile Engineering</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn" style="width: 100%; text-align: center;">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact & Location Details</h2>
+        <div class="contact-content">
+            <div class="contact-item">
+                <div class="contact-icon">📍</div>
+                <h3>Address</h3>
+                <p>ANJUMAN POLYTECHNIC</p>
+                <p>Ayodhya Nagar, Karwar Road</p>
+                <p>Hubli, Karnataka, India</p>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon">📞</div>
+                <h3>Phone</h3>
+                <p>Office: +91-88678-65975</p>
+                <p>Admission: +91-88678-65975</p>
+                <p>For More Details: +91-88678-65975</p>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon">📧</div>
+                <h3>Email</h3>
+                <p>info@anjumanpoly.edu.in</p>
+                <p>admission@anjumanpoly.edu.in</p>
+                <p>support@anjumanpoly.edu.in</p>
+            </div>
+            <div class="contact-item">
+                <div class="contact-icon">⏰</div>
+                <h3>Hours</h3>
+                <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+                <p>Saturday: 10:00 AM - 2:00 PM</p>
+                <p>Sunday: Closed</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+        <h2>Institute Achievements & Milestones</h2>
+        <div class="achievements-grid">
+            <div class="achievement-item">
+                <h3>⭐ 28+</h3>
+                <p>Years of Excellence in Education</p>
+            </div>
+            <div class="achievement-item">
+                <h3>🎓 5000+</h3>
+                <p>Successful Graduates</p>
+            </div>
+            <div class="achievement-item">
+                <h3>✅ 100%</h3>
+                <p>Placement Rate</p>
+            </div>
+            <div class="achievement-item">
+                <h3>👨‍🎓 5000+</h3>
+                <p>Active Alumni Network</p>
+            </div>
+            <div class="achievement-item">
+                <h3>🔬 50+</h3>
+                <p>Experienced Faculty</p>
+            </div>
+            <div class="achievement-item">
+                <h3>🏆 NAAC</h3>
+                <p>Accredited Institution</p>
+            </div>
+            <div class="achievement-item">
+                <h3>🌟 ISO 9001:2015</h3>
+                <p>Quality Management Certified</p>
+            </div>
+            <div class="achievement-item">
+                <h3>🎖️ 15+ Research</h3>
+                <p>Projects & Publications</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <h2>Student Success Stories & Testimonials</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="star-rating">★★★★★</div>
+                <p class="testimonial-text">"ANJUMAN POLYTECHNIC provided me with excellent practical knowledge and guidance. The faculty is very supportive and the labs are well-equipped. I got placed in a leading IT company!"</p>
+                <p class="testimonial-author">Amit Kumar</p>
+                <p class="testimonial-role">Computer Science Graduate, Software Engineer at TCS</p>
+            </div>
+            <div class="testimonial-card">
+                <div class="star-rating">★★★★★</div>
+                <p class="testimonial-text">"The curriculum is industry-focused and the internship opportunities are fantastic. I learned real-world skills that helped me secure a job immediately after graduation. Highly recommended!"</p>
+                <p class="testimonial-author">Priya Singh</p>
+                <p class="testimonial-role">Mechanical Engineering Graduate, Design Engineer at Bajaj Auto</p>
+            </div>
+            <div class="testimonial-card">
+                <div class="star-rating">★★★★★</div>
+                <p class="testimonial-text">"The facilities, especially the labs and library, are outstanding. The teachers are experienced and always ready to help. This college truly prepares you for a successful career in engineering."</p>
+                <p class="testimonial-author">Rajesh Verma</p>
+                <p class="testimonial-role">Electrical Engineering Graduate, Senior Technician at BHEL</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Placement Records Section -->
+    <section id="placements" class="placements">
+        <h2>Placement Records & Career Opportunities</h2>
+        <div class="placement-stats">
+            <div class="placement-stat">
+                <h3>100%</h3>
+                <p>Placement Rate</p>
+            </div>
+            <div class="placement-stat">
+                <h3>₹3.5L</h3>
+                <p>Average Salary Package</p>
+            </div>
+            <div class="placement-stat">
+                <h3>₹6L+</h3>
+                <p>Highest Package</p>
+            </div>
+            <div class="placement-stat">
+                <h3>200+</h3>
+                <p>Companies Visiting</p>
+            </div>
+        </div>
+
+        <div class="companies-section">
+            <h3 style="color: #1a3a52; text-align: center;">Our Placement Partners</h3>
+            <div class="companies-grid">
+                <div class="company-logo">TCS</div>
+                <div class="company-logo">Infosys</div>
+                <div class="company-logo">Wipro</div>
+                <div class="company-logo">HCL</div>
+                <div class="company-logo">Cognizant</div>
+                <div class="company-logo">Tech Mahindra</div>
+                <div class="company-logo">Bajaj Auto</div>
+                <div class="company-logo">BHEL</div>
+                <div class="company-logo">Siemens</div>
+                <div class="company-logo">L&T</div>
+                <div class="company-logo">Bosch</div>
+                <div class="company-logo">Apollo</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News & Events Section -->
+    <section id="news" class="news">
+        <h2>Latest News, Events & Updates</h2>
+        <div class="news-grid">
+            <div class="news-card">
+                <div class="news-header">📰</div>
+                <div class="news-content">
+                    <p class="news-date">January 2026</p>
+                    <h4>Admissions Open for 2025-26</h4>
+                    <p>ANJUMAN POLYTECHNIC is now accepting applications for all diploma programs. Apply now and secure your seat in our premier institution!</p>
+                </div>
+            </div>
+            <div class="news-card">
+                <div class="news-header">🏆</div>
+                <div class="news-content">
+                    <p class="news-date">December 2025</p>
+                    <h4>Students Win National Tech Competition</h4>
+                    <p>Our computer science students won 1st prize in the National Robotics Competition. Great achievement!</p>
+                </div>
+            </div>
+            <div class="news-card">
+                <div class="news-header">🎯</div>
+                <div class="news-content">
+                    <p class="news-date">November 2025</p>
+                    <h4>Industry Seminar Hosted</h4>
+                    <p>Leading industry experts conducted seminars on emerging technologies. Students gained valuable insights for their career growth.</p>
+                </div>
+            </div>
+            <div class="news-card">
+                <div class="news-header">💼</div>
+                <div class="news-content">
+                    <p class="news-date">October 2025</p>
+                    <h4>Campus Placement Drive</h4>
+                    <p>200+ companies participated in our campus placement drive. Over 90% of graduating students were placed successfully!</p>
+                </div>
+            </div>
+            <div class="news-card">
+                <div class="news-header">🔬</div>
+                <div class="news-content">
+                    <p class="news-date">September 2025</p>
+                    <h4>New Advanced Labs Inaugurated</h4>
+                    <p>State-of-the-art laboratories for IoT and AI research have been inaugurated for student training and projects.</p>
+                </div>
+            </div>
+            <div class="news-card">
+                <div class="news-header">🌟</div>
+                <div class="news-content">
+                    <p class="news-date">August 2025</p>
+                    <h4>Alumni Success Stories</h4>
+                    <p>Our alumni are working in top MNCs and contributing significantly to their organizations. We are proud of their achievements!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <h2>Campus Life & Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">🏢</div>
+            <div class="gallery-item">🔬</div>
+            <div class="gallery-item">📚</div>
+            <div class="gallery-item">💻</div>
+            <div class="gallery-item">🏃</div>
+            <div class="gallery-item">🎓</div>
+            <div class="gallery-item">🏗️</div>
+            <div class="gallery-item">⚙️</div>
+            <div class="gallery-item">🚗</div>
+            <div class="gallery-item">🎨</div>
+        </div>
+    </section>
+
+    <!-- Accreditations Section -->
+    <section id="accreditations" class="accreditations">
+        <h2>Accreditations, Certifications & Recognition</h2>
+        <div class="accreditations-grid">
+            <div class="accreditation-item">
+                <div class="accreditation-icon">✅</div>
+                <p><strong>NAAC Accredited</strong></p>
+                <p>National Assessment and Accreditation Council</p>
+            </div>
+            <div class="accreditation-item">
+                <div class="accreditation-icon">🏆</div>
+                <p><strong>Govt. Approved</strong></p>
+                <p>Recognized by Government of Karnataka</p>
+            </div>
+            <div class="accreditation-item">
+                <div class="accreditation-icon">📜</div>
+                <p><strong>ISO Certified</strong></p>
+                <p>ISO 9001:2015 Quality Management</p>
+            </div>
+            <div class="accreditation-item">
+                <div class="accreditation-icon">⭐</div>
+                <p><strong>Five Star Rating</strong></p>
+                <p>Ranked Among Top Polytechnics</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alumni Section -->
+    <section id="alumni" class="alumni">
+        <h2>Distinguished Alumni & Success Stories</h2>
+        <div class="alumni-grid">
+            <div class="alumni-item">
+                <h4>Suresh Reddy</h4>
+                <p>CS Batch 2015</p>
+                <p>Director at Tech Solutions Ltd</p>
+            </div>
+            <div class="alumni-item">
+                <h4>Meera Sharma</h4>
+                <p>ME Batch 2014</p>
+                <p>Senior Manager, Automotive Division</p>
+            </div>
+            <div class="alumni-item">
+                <h4>Anil Kumar</h4>
+                <p>CE Batch 2013</p>
+                <p>Project Manager, Infrastructure Corp</p>
+            </div>
+            <div class="alumni-item">
+                <h4>Divya Patel</h4>
+                <p>E&C Batch 2016</p>
+                <p>Senior Engineer, Telecom Company</p>
+            </div>
+            <div class="alumni-item">
+                <h4>Rajkumar Singh</h4>
+                <p>E&D Batch 2012</p>
+                <p>Power Plant Manager, Energy Sector</p>
+            </div>
+            <div class="alumni-item">
+                <h4>Sneha Desai</h4>
+                <p>CS Batch 2017</p>
+                <p>Product Manager, Software Startup</p>
+            </div>
+            <div class="alumni-item">
+                <h4>Arjun Menon</h4>
+                <p>ME Batch 2015</p>
+                <p>Design Head, Manufacturing Company</p>
+            </div>
+            <div class="alumni-item">
+                <h4>Pooja Gupta</h4>
+                <p>CE Batch 2014</p>
+                <p>Civil Consultant, Engineering Firm</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h3>ANJUMAN POLYTECHNIC HUBLI</h3>
+            <p>Excellence in Technical Education | Building Future Engineers</p>
+            
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#departments">Departments</a>
+                <a href="#facilities">Facilities</a>
+                <a href="#admission">Admission</a>
+                <a href="#placements">Placements</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="social-links">
+                <a href="#" title="Facebook">f</a>
+                <a href="#" title="Twitter">𝕏</a>
+                <a href="#" title="LinkedIn">in</a>
+                <a href="#" title="YouTube">▶</a>
+            </div>
+
+            <hr style="border: none; border-top: 1px solid rgba(255,255,255,0.3); margin: 1.5rem 0;">
+            <p>&copy; 2025-2026 ANJUMAN POLYTECHNIC HUBLI. All Rights Reserved.</p>
+            <p style="font-size: 0.9rem; margin-top: 1rem;">Privacy Policy | Terms & Conditions | NAAC Accredited</p>
+        </div>
+    </footer>
+
+    <script>
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                class: document.getElementById('class').value,
+                program: document.getElementById('program').value,
+                message: document.getElementById('message').value
+            };
+            
+            console.log('Form Data:', formData);
+            alert('Thank you for your inquiry! We will contact you soon.\n\nYour Details:\nName: ' + formData.name + '\nEmail: ' + formData.email + '\nPhone: ' + formData.phone);
+            
+            document.querySelector('.admission-form form').reset();
+        }
+
+        // Smooth scrolling for all anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
